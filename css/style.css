@@ -2267,15 +2267,87 @@ h3.archivment-back {
 .video-singl-img img{
 
     position: relative;
+    /* width: 300px; */
     width: 353.06px;
     height: 279.5px;
+    
 }
+
+/* Styles for devices with a maximum width of 360px (Samsung Galaxy S8+) */
+@media only screen and (max-width: 360px) {
+    .video-singl-img img{
+        width: 300px;
+    }
+  }
+
+  /* Styles for devices with a maximum width of 320px (iPhone SE) */
+@media only screen and (max-width: 480px) {
+    .grid-item{
+        display: flex;
+        justify-content: center;
+    }
+    .video-singl-img img{
+        width: 300px;
+    }
+    
+  }
+
+  /* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    .video-singl-img{
+        display: flex;
+        justify-content: space-evenly;
+    }
+  }
+
+  /* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+    .video-singl-img img{
+        width: 291.33px;
+        height: 230.63px;   
+    }
+  }
+
+  /* Portrait */
+@media only screen and (min-device-width: 540px) and (max-device-width: 720px) and (orientation: portrait) {
+    .grid-item{
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+  /* Landscape */
+@media only screen and (min-device-width: 720px) and (max-device-width: 1080px) and (orientation: landscape) {
+    .grid-item{
+        display: flex;
+        justify-content: center;
+    }
+  }
+
+  /* Main Display - Portrait */
+@media only screen and (min-width: 280px) and (max-width: 1536px) and (orientation: portrait) {
+   .video-singl-img img{
+    width: 220px;
+    height: 174.16px;
+   }
+
+   .about-img .img-2{
+    display: none;
+   }
+
+   
+
+  }
+  
+  
 
 .video-link p{
     color: #fff;
     text-align: center;
     /* margin-right: 80px; */
 }
+
+
 
 .video-singl-img::before {
 
