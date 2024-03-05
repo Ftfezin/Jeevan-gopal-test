@@ -54,7 +54,9 @@
 
 @import url('https://fonts.googleapis.com/css?family=Karla:400,700|Playfair+Display:400,700,900|Rufina:400,700&display=swap');
 
-
+*{
+    scroll-behavior: smooth;
+}
 
 @font-face {
 
@@ -2262,7 +2264,10 @@ h3.archivment-back {
 
 }
 
-
+.video-singl-img{
+    display: flex;
+    justify-content: center;
+}
 
 .video-singl-img img{
 
@@ -2293,12 +2298,12 @@ h3.archivment-back {
   }
 
   /* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+/* @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
     .video-singl-img{
         display: flex;
         justify-content: space-evenly;
     }
-  }
+  } */
 
   /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
@@ -2342,9 +2347,9 @@ h3.archivment-back {
   
 
 .video-link p{
+    display: flex;
+    justify-content: center;
     color: #fff;
-    text-align: center;
-    /* margin-right: 80px; */
 }
 
 .video-singl-img::before {
@@ -3069,7 +3074,7 @@ h3.archivment-back {
 
 
 
-.footer-title::before {
+/* .footer-title::before {
 
 	content: "";
 
@@ -3087,7 +3092,7 @@ h3.archivment-back {
 
 	bottom: 2px;
 
-}
+} */
 
 
 
@@ -3109,7 +3114,9 @@ h3.archivment-back {
 
 }
 
-
+.copy-right{
+    text-align: center;
+}
 
 .copy-right p {
 
@@ -3117,7 +3124,7 @@ h3.archivment-back {
 
 }
 
-
+ 
 
 .footer-social ul li {
 
@@ -3204,16 +3211,6 @@ h3.archivment-back {
     font-size: 24px;
 
     margin-bottom: 30px;
-
-}
-
-.footer-about p {
-
-	color: #bdbdbd;
-
-	font-size: 16px;
-
-	margin-bottom: 30px;
 
 }
 
